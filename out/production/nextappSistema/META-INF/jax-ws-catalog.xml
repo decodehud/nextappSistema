@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:51672/nextappWebService/WebServiceUsuarios?WSDL" uri="xml-resources/web-service-references/WebServiceUsuarios/wsdl/localhost_51672/nextappWebService/WebServiceUsuarios.wsdl"/>
+    <system systemId="http://localhost:51672/nextappWebService/WebServiceUsuarios?xsd=1" uri="xml-resources/web-service-references/WebServiceUsuarios/wsdl/localhost_51672/nextappWebService/WebServiceUsuarios.xsd_1.xsd"/>
+    <system systemId="http://localhost:51672/nextappWebService/WebServices?wsdl" uri="wsdl/localhost_51672/nextappWebService/WebServices.wsdl"/>
+    <system systemId="http://localhost:51672/nextappWebService/WebServices?xsd=1" uri="wsdl/localhost_51672/nextappWebService/WebServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:50725/nextappWebService/WebServices?wsdl" uri="wsdl/localhost_50725/nextappWebService/WebServices.wsdl"/>
+    <system systemId="http://localhost:50725/nextappWebService/WebServices?xsd=1" uri="wsdl/localhost_50725/nextappWebService/WebServices.xsd_1.xsd"/>
+</catalog>

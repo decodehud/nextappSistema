@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nextappSistema">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/nextappSistema.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

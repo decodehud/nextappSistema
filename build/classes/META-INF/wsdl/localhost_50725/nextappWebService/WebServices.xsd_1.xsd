@@ -1,0 +1,942 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://WebServices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebServices/">
+
+<xs:element name="ActualizarSolicitud" type="tns:ActualizarSolicitud"/>
+
+<xs:element name="ActualizarSolicitudResponse" type="tns:ActualizarSolicitudResponse"/>
+
+<xs:element name="AgregarCompraEquipo" type="tns:AgregarCompraEquipo"/>
+
+<xs:element name="AgregarCompraEquipoResponse" type="tns:AgregarCompraEquipoResponse"/>
+
+<xs:element name="AgregarEmpleado" type="tns:AgregarEmpleado"/>
+
+<xs:element name="AgregarEmpleadoResponse" type="tns:AgregarEmpleadoResponse"/>
+
+<xs:element name="AgregarEquipo" type="tns:AgregarEquipo"/>
+
+<xs:element name="AgregarEquipoResponse" type="tns:AgregarEquipoResponse"/>
+
+<xs:element name="AgregarProveedor" type="tns:AgregarProveedor"/>
+
+<xs:element name="AgregarProveedorResponse" type="tns:AgregarProveedorResponse"/>
+
+<xs:element name="AgregarSolicitudEquipo" type="tns:AgregarSolicitudEquipo"/>
+
+<xs:element name="AgregarSolicitudEquipoResponse" type="tns:AgregarSolicitudEquipoResponse"/>
+
+<xs:element name="AgregarUsuario" type="tns:AgregarUsuario"/>
+
+<xs:element name="AgregarUsuarioResponse" type="tns:AgregarUsuarioResponse"/>
+
+<xs:element name="BuscarEmpleado" type="tns:BuscarEmpleado"/>
+
+<xs:element name="BuscarEmpleadoResponse" type="tns:BuscarEmpleadoResponse"/>
+
+<xs:element name="BuscarEquipo" type="tns:BuscarEquipo"/>
+
+<xs:element name="BuscarEquipoResponse" type="tns:BuscarEquipoResponse"/>
+
+<xs:element name="BuscarProveedor" type="tns:BuscarProveedor"/>
+
+<xs:element name="BuscarProveedorResponse" type="tns:BuscarProveedorResponse"/>
+
+<xs:element name="BuscarSolicitud" type="tns:BuscarSolicitud"/>
+
+<xs:element name="BuscarSolicitudResponse" type="tns:BuscarSolicitudResponse"/>
+
+<xs:element name="BuscarUsuario" type="tns:BuscarUsuario"/>
+
+<xs:element name="BuscarUsuarioResponse" type="tns:BuscarUsuarioResponse"/>
+
+<xs:element name="CrearSolicitud" type="tns:CrearSolicitud"/>
+
+<xs:element name="CrearSolicitudResponse" type="tns:CrearSolicitudResponse"/>
+
+<xs:element name="EliminarCompraEquipo" type="tns:EliminarCompraEquipo"/>
+
+<xs:element name="EliminarCompraEquipoResponse" type="tns:EliminarCompraEquipoResponse"/>
+
+<xs:element name="EliminarEmpleados" type="tns:EliminarEmpleados"/>
+
+<xs:element name="EliminarEmpleadosResponse" type="tns:EliminarEmpleadosResponse"/>
+
+<xs:element name="EliminarEquipo" type="tns:EliminarEquipo"/>
+
+<xs:element name="EliminarEquipoResponse" type="tns:EliminarEquipoResponse"/>
+
+<xs:element name="EliminarProveedor" type="tns:EliminarProveedor"/>
+
+<xs:element name="EliminarProveedorResponse" type="tns:EliminarProveedorResponse"/>
+
+<xs:element name="EliminarSolicitud" type="tns:EliminarSolicitud"/>
+
+<xs:element name="EliminarSolicitudResponse" type="tns:EliminarSolicitudResponse"/>
+
+<xs:element name="EliminarUsuario" type="tns:EliminarUsuario"/>
+
+<xs:element name="EliminarUsuarioResponse" type="tns:EliminarUsuarioResponse"/>
+
+<xs:element name="ListarCargoEmpleado" type="tns:ListarCargoEmpleado"/>
+
+<xs:element name="ListarCargoEmpleadoResponse" type="tns:ListarCargoEmpleadoResponse"/>
+
+<xs:element name="ListarCompras" type="tns:ListarCompras"/>
+
+<xs:element name="ListarComprasResponse" type="tns:ListarComprasResponse"/>
+
+<xs:element name="ListarDepartEmp" type="tns:ListarDepartEmp"/>
+
+<xs:element name="ListarDepartEmpResponse" type="tns:ListarDepartEmpResponse"/>
+
+<xs:element name="ListarEmpleados" type="tns:ListarEmpleados"/>
+
+<xs:element name="ListarEmpleadosResponse" type="tns:ListarEmpleadosResponse"/>
+
+<xs:element name="ListarEquipos" type="tns:ListarEquipos"/>
+
+<xs:element name="ListarEquiposResponse" type="tns:ListarEquiposResponse"/>
+
+<xs:element name="ListarMarca" type="tns:ListarMarca"/>
+
+<xs:element name="ListarMarcaResponse" type="tns:ListarMarcaResponse"/>
+
+<xs:element name="ListarProvedores" type="tns:ListarProvedores"/>
+
+<xs:element name="ListarProvedoresResponse" type="tns:ListarProvedoresResponse"/>
+
+<xs:element name="ListarUsuario" type="tns:ListarUsuario"/>
+
+<xs:element name="ListarUsuarioResponse" type="tns:ListarUsuarioResponse"/>
+
+<xs:element name="ModificarCompraEquipo" type="tns:ModificarCompraEquipo"/>
+
+<xs:element name="ModificarCompraEquipoResponse" type="tns:ModificarCompraEquipoResponse"/>
+
+<xs:element name="ModificarEmpleado" type="tns:ModificarEmpleado"/>
+
+<xs:element name="ModificarEmpleadoResponse" type="tns:ModificarEmpleadoResponse"/>
+
+<xs:element name="ModificarEquipo" type="tns:ModificarEquipo"/>
+
+<xs:element name="ModificarEquipoResponse" type="tns:ModificarEquipoResponse"/>
+
+<xs:element name="ModificarProveedor" type="tns:ModificarProveedor"/>
+
+<xs:element name="ModificarProveedorResponse" type="tns:ModificarProveedorResponse"/>
+
+<xs:element name="ModificarSolicitud" type="tns:ModificarSolicitud"/>
+
+<xs:element name="ModificarSolicitudResponse" type="tns:ModificarSolicitudResponse"/>
+
+<xs:element name="ModificarUsuario" type="tns:ModificarUsuario"/>
+
+<xs:element name="ModificarUsuarioResponse" type="tns:ModificarUsuarioResponse"/>
+
+<xs:element name="TecnicoAsignado" type="tns:TecnicoAsignado"/>
+
+<xs:element name="TecnicoAsignadoResponse" type="tns:TecnicoAsignadoResponse"/>
+
+<xs:element name="TipoEquipo" type="tns:TipoEquipo"/>
+
+<xs:element name="TipoEquipoResponse" type="tns:TipoEquipoResponse"/>
+
+<xs:element name="ValidarUsuario" type="tns:ValidarUsuario"/>
+
+<xs:element name="ValidarUsuarioResponse" type="tns:ValidarUsuarioResponse"/>
+
+<xs:element name="mostrarProveedores" type="tns:mostrarProveedores"/>
+
+<xs:element name="mostrarProveedoresResponse" type="tns:mostrarProveedoresResponse"/>
+
+<xs:element name="privilegios" type="tns:privilegios"/>
+
+<xs:element name="privilegiosResponse" type="tns:privilegiosResponse"/>
+
+<xs:complexType name="ListarEmpleados">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarEmpleadosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:lEmpleados" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lEmpleados">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="departamento" type="xs:string" minOccurs="0"/>
+<xs:element name="equipo_Asignado" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:int"/>
+<xs:element name="fecha_Asignacion" type="xs:string" minOccurs="0"/>
+<xs:element name="id_Empleado" type="xs:int"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="serie" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActualizarSolicitud">
+<xs:sequence>
+<xs:element name="Id_Solicitud" type="xs:int"/>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="Codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="Correo" type="xs:string" minOccurs="0"/>
+<xs:element name="Telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="Cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="Tipo_Solicitud" type="xs:string" minOccurs="0"/>
+<xs:element name="Estado_Asignado" type="xs:boolean" minOccurs="0"/>
+<xs:element name="Estado_Solicitud" type="xs:string" minOccurs="0"/>
+<xs:element name="Mensaje" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActualizarSolicitudResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="privilegios">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="privilegiosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:privilegiosGT" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="privilegiosGT">
+<xs:sequence>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="idPrivilegio" type="xs:int"/>
+<xs:element name="privilegio" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarEquipo">
+<xs:sequence>
+<xs:element name="Id_Equipo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarEquipoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarEmpleado">
+<xs:sequence>
+<xs:element name="Id_Empleado" type="xs:int"/>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="Codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="Correo" type="xs:string" minOccurs="0"/>
+<xs:element name="Cargo" type="xs:int"/>
+<xs:element name="Departamento" type="xs:int"/>
+<xs:element name="Estado" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarEmpleadoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ValidarUsuario">
+<xs:sequence>
+<xs:element name="Login" type="xs:string" minOccurs="0"/>
+<xs:element name="Password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ValidarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuarios" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="usuarios">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:int"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="idPrivilegio" type="xs:int"/>
+<xs:element name="idUsuario" type="xs:int"/>
+<xs:element name="login" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="privilegio" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarProveedor">
+<xs:sequence>
+<xs:element name="Id_Proveedor" type="xs:int"/>
+<xs:element name="Empresa" type="xs:string" minOccurs="0"/>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="Nit" type="xs:string" minOccurs="0"/>
+<xs:element name="Giro" type="xs:string" minOccurs="0"/>
+<xs:element name="Correo" type="xs:string" minOccurs="0"/>
+<xs:element name="Direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="Telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="Ciudad" type="xs:string" minOccurs="0"/>
+<xs:element name="Pais" type="xs:string" minOccurs="0"/>
+<xs:element name="Estado" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarProveedorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:proveedores" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="proveedores">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="ciudad" type="xs:string" minOccurs="0"/>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="empresa" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:int"/>
+<xs:element name="giro" type="xs:string" minOccurs="0"/>
+<xs:element name="id_Proveedor" type="xs:int"/>
+<xs:element name="nit" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="pais" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarProveedor">
+<xs:sequence>
+<xs:element name="Id_Proveedor" type="xs:int"/>
+<xs:element name="Empresa" type="xs:string" minOccurs="0"/>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="Nit" type="xs:string" minOccurs="0"/>
+<xs:element name="Giro" type="xs:string" minOccurs="0"/>
+<xs:element name="Correo" type="xs:string" minOccurs="0"/>
+<xs:element name="Telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="Direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="Ciudad" type="xs:string" minOccurs="0"/>
+<xs:element name="Pais" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarProveedorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarMarca">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarMarcaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:lMarca" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lMarca">
+<xs:sequence>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="idMarcaModelo" type="xs:int"/>
+<xs:element name="marca" type="xs:string" minOccurs="0"/>
+<xs:element name="modelo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TipoEquipo">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="TipoEquipoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tipoEquipoGT" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tipoEquipoGT">
+<xs:sequence>
+<xs:element name="equipo" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="idTipoEquipo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarProveedor">
+<xs:sequence>
+<xs:element name="Empresa" type="xs:string" minOccurs="0"/>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="Nit" type="xs:string" minOccurs="0"/>
+<xs:element name="Giro" type="xs:string" minOccurs="0"/>
+<xs:element name="Correo" type="xs:string" minOccurs="0"/>
+<xs:element name="Telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="Direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="Ciudad" type="xs:string" minOccurs="0"/>
+<xs:element name="Pais" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarProveedorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TecnicoAsignado">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="TecnicoAsignadoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tecnico" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tecnico">
+<xs:sequence>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="idPrivilegio" type="xs:int"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="privilegio" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mostrarProveedores">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="mostrarProveedoresResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mproveedores" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mproveedores">
+<xs:sequence>
+<xs:element name="empresa" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="id_Proveedor" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarCargoEmpleado">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarCargoEmpleadoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:lCargoEmpleado" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lCargoEmpleado">
+<xs:sequence>
+<xs:element name="cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="idCargoEmpleado" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarUsuario">
+<xs:sequence>
+<xs:element name="IdUsuario" type="xs:int"/>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Login" type="xs:string" minOccurs="0"/>
+<xs:element name="Password" type="xs:string" minOccurs="0"/>
+<xs:element name="Email" type="xs:string" minOccurs="0"/>
+<xs:element name="Estado" type="xs:boolean"/>
+<xs:element name="IdPrivilegio" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearSolicitud">
+<xs:sequence>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="Codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="Correo" type="xs:string" minOccurs="0"/>
+<xs:element name="Telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="Cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="Tipo_Solicitud" type="xs:string" minOccurs="0"/>
+<xs:element name="Estado_Solicitud" type="xs:string" minOccurs="0"/>
+<xs:element name="Mensaje" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CrearSolicitudResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarUsuario">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:lUsuarios" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lUsuarios">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:int"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="idPrivilegio" type="xs:int"/>
+<xs:element name="idUsuario" type="xs:int"/>
+<xs:element name="login" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="privilegio" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarCompraEquipo">
+<xs:sequence>
+<xs:element name="Id_Proveedor" type="xs:int"/>
+<xs:element name="IdTipoEquipo" type="xs:int"/>
+<xs:element name="IdMarcaModelo" type="xs:int"/>
+<xs:element name="Cantidad" type="xs:int"/>
+<xs:element name="Precio" type="xs:double"/>
+<xs:element name="Descripcion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarCompraEquipoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarCompras">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarComprasResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:lCompras" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lCompras">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="cantidad" type="xs:int"/>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="empresa" type="xs:string" minOccurs="0"/>
+<xs:element name="equipo" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha_Compra" type="xs:string" minOccurs="0"/>
+<xs:element name="id_Compra" type="xs:int"/>
+<xs:element name="marca" type="xs:string" minOccurs="0"/>
+<xs:element name="modelo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="precio" type="xs:double"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarUsuario">
+<xs:sequence>
+<xs:element name="IdUsuario" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarEquipo">
+<xs:sequence>
+<xs:element name="Id_Equipo" type="xs:int"/>
+<xs:element name="Modelo" type="xs:string" minOccurs="0"/>
+<xs:element name="Serie" type="xs:string" minOccurs="0"/>
+<xs:element name="IdTipoEquipo" type="xs:int"/>
+<xs:element name="Estado" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarEquipoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:equipos" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="equipos">
+<xs:sequence>
+<xs:element name="caracteristicas" type="xs:string" minOccurs="0"/>
+<xs:element name="equipo" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:int"/>
+<xs:element name="fecha_Registro" type="xs:string" minOccurs="0"/>
+<xs:element name="idTipoEquipo" type="xs:int"/>
+<xs:element name="id_Equipo" type="xs:int"/>
+<xs:element name="marca" type="xs:string" minOccurs="0"/>
+<xs:element name="modelo" type="xs:string" minOccurs="0"/>
+<xs:element name="serie" type="xs:string" minOccurs="0"/>
+<xs:element name="stock" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarProveedor">
+<xs:sequence>
+<xs:element name="Id_Proveedor" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarProveedorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarCompraEquipo">
+<xs:sequence>
+<xs:element name="Id_Compra" type="xs:int"/>
+<xs:element name="Id_Proveedor" type="xs:int"/>
+<xs:element name="Id_Equipo" type="xs:int"/>
+<xs:element name="Cantidad" type="xs:int"/>
+<xs:element name="Precio" type="xs:double"/>
+<xs:element name="Descripcion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarCompraEquipoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarProvedores">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarProvedoresResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:lProveedores" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lProveedores">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="ciudad" type="xs:string" minOccurs="0"/>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="empresa" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:int"/>
+<xs:element name="giro" type="xs:string" minOccurs="0"/>
+<xs:element name="id_Proveedor" type="xs:int"/>
+<xs:element name="nit" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="pais" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarEquipo">
+<xs:sequence>
+<xs:element name="Id_Equipo" type="xs:int"/>
+<xs:element name="Marca" type="xs:string" minOccurs="0"/>
+<xs:element name="Modelo" type="xs:string" minOccurs="0"/>
+<xs:element name="Serie" type="xs:string" minOccurs="0"/>
+<xs:element name="Caracteristicas" type="xs:string" minOccurs="0"/>
+<xs:element name="Stock" type="xs:string" minOccurs="0"/>
+<xs:element name="Estado" type="xs:boolean" minOccurs="0"/>
+<xs:element name="Tipo_Equipo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarEquipoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarEquipos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarEquiposResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:lEquipos" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lEquipos">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="caracteristicas" type="xs:string" minOccurs="0"/>
+<xs:element name="cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:int"/>
+<xs:element name="fecha_Registro" type="xs:string" minOccurs="0"/>
+<xs:element name="idTipoEquipo" type="xs:int"/>
+<xs:element name="id_Equipo" type="xs:int"/>
+<xs:element name="marca" type="xs:string" minOccurs="0"/>
+<xs:element name="modelo" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="serie" type="xs:string" minOccurs="0"/>
+<xs:element name="stock" type="xs:int"/>
+<xs:element name="tipo_Equipo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarDepartEmp">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="ListarDepartEmpResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:lDepartEmp" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lDepartEmp">
+<xs:sequence>
+<xs:element name="departamento" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="idDepartmentoEmpleado" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarSolicitud">
+<xs:sequence>
+<xs:element name="Id_Solcitud" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarSolicitudResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarSolicitudEquipo">
+<xs:sequence>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="Codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="Correo" type="xs:string" minOccurs="0"/>
+<xs:element name="Telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="Cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="Tipo_Solicitud" type="xs:string" minOccurs="0"/>
+<xs:element name="Mensaje" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarSolicitudEquipoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarSolicitud">
+<xs:sequence>
+<xs:element name="Id_Solicitud" type="xs:int"/>
+<xs:element name="Codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="Correo" type="xs:string" minOccurs="0"/>
+<xs:element name="Estado" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarSolicitudResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:solicitudEquipos" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="solicitudEquipos">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="estado_Asignado" type="xs:int"/>
+<xs:element name="estado_Solicitud" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha_Solicitud" type="xs:string" minOccurs="0"/>
+<xs:element name="id_Solicitud" type="xs:int"/>
+<xs:element name="mensaje" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo_Solicitud" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarCompraEquipo">
+<xs:sequence>
+<xs:element name="Id_Proveedor" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarCompraEquipoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarSolicitud">
+<xs:sequence>
+<xs:element name="Id_Solicitud" type="xs:int"/>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="Codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="Correo" type="xs:string" minOccurs="0"/>
+<xs:element name="Telefono" type="xs:string" minOccurs="0"/>
+<xs:element name="Cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="Tipo_Solicitud" type="xs:string" minOccurs="0"/>
+<xs:element name="Mensaje" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModificarSolicitudResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarEmpleado">
+<xs:sequence>
+<xs:element name="Id_Empleado" type="xs:int"/>
+<xs:element name="Apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="Codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="Estado" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarEmpleadoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:empleados" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="empleados">
+<xs:sequence>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="correo" type="xs:string" minOccurs="0"/>
+<xs:element name="departamento" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:int"/>
+<xs:element name="fecha_Asignacion" type="xs:string" minOccurs="0"/>
+<xs:element name="idCargoEmpleado" type="xs:int"/>
+<xs:element name="idDepartamentoEmpleado" type="xs:int"/>
+<xs:element name="id_Empleado" type="xs:int"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarEmpleados">
+<xs:sequence>
+<xs:element name="Id_Empleado" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarEmpleadosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarUsuario">
+<xs:sequence>
+<xs:element name="IdUsuario" type="xs:int"/>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Login" type="xs:string" minOccurs="0"/>
+<xs:element name="Email" type="xs:string" minOccurs="0"/>
+<xs:element name="Estado" type="xs:string" minOccurs="0"/>
+<xs:element name="IdPrivilegio" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:usuarios" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarEmpleado">
+<xs:sequence>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="Codigo_Empleado" type="xs:string" minOccurs="0"/>
+<xs:element name="Correo" type="xs:string" minOccurs="0"/>
+<xs:element name="IdCargoEmpleado" type="xs:int"/>
+<xs:element name="IdDepartamentoEmpleado" type="xs:int"/>
+<xs:element name="Estado" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarEmpleadoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarEquipo">
+<xs:sequence>
+<xs:element name="Marca" type="xs:string" minOccurs="0"/>
+<xs:element name="Modelo" type="xs:string" minOccurs="0"/>
+<xs:element name="Serie" type="xs:string" minOccurs="0"/>
+<xs:element name="Caracteristicas" type="xs:string" minOccurs="0"/>
+<xs:element name="Stock" type="xs:string" minOccurs="0"/>
+<xs:element name="Estado" type="xs:boolean" minOccurs="0"/>
+<xs:element name="Tipo_Equipo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarEquipoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarUsuario">
+<xs:sequence>
+<xs:element name="Nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="Login" type="xs:string" minOccurs="0"/>
+<xs:element name="Password" type="xs:string" minOccurs="0"/>
+<xs:element name="Email" type="xs:string" minOccurs="0"/>
+<xs:element name="Estado" type="xs:boolean"/>
+<xs:element name="IdPrivilegio" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AgregarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
